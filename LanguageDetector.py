@@ -6,7 +6,7 @@ model = fasttext.load_model('model_q.bin')
 st.write("Enter text to Detect language.")
 text = st.text_area("")
 if st.button('Detect'):
-	out=model.predict(text,k=2)
+	out=model.test(text,k=2)
 	lang_name_tup=out[0]
 	lang_per_arr=out[1]
 	for i in range(2):
