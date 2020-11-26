@@ -2,7 +2,7 @@ import streamlit as st
 from pycountry import languages
 st.title("Language Detector")
 import fasttext
-model = fasttext.load_model('model.bin')
+model = fasttext.load_model('model_q.bin')
 st.write("Enter text to Detect language.")
 text = st.text_area("")
 if st.button('Detect'):
