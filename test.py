@@ -8,6 +8,12 @@ descs=["Apan","Idiot!!","Pattren","Bacche","Arey main so gaya tha","Tune order k
 img_urls=["https://i.imgflip.com/amucx.jpg",
 "https://i.redd.it/w3kr4m2fi3111.png",
 "https://i.imgflip.com/amucx.jpg",
+"https://i.redd.it/w3kr4m2fi3111.png",
+"https://i.redd.it/w3kr4m2fi3111.png",
+"https://i.redd.it/w3kr4m2fi3111.png",
+"https://i.redd.it/w3kr4m2fi3111.png",
+"https://i.redd.it/w3kr4m2fi3111.png",
+"https://i.redd.it/w3kr4m2fi3111.png",
 "https://i.redd.it/w3kr4m2fi3111.png"]
 
 values=["Peter","Jayati","Sonia Khetrapaul","Parul Singh","Peter","Jayati","Rohit Bhaiya","Peter","Maddy","Jayati"]
@@ -20,8 +26,8 @@ if 'key' not in st.session_state:
 if 'desc' not in st.session_state:
 	st.session_state.desc = descs[0]
 
-# if 'img_url' not in st.session_state:
-# 	st.session_state.img_url = img_urls[0]
+if 'img_url' not in st.session_state:
+	st.session_state.img_url = img_urls[0]
 
 if 'value' not in st.session_state:
 	st.session_state.value = values[0]
