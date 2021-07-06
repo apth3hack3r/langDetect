@@ -62,8 +62,7 @@ def form_callback():
 		st.session_state.desc=descs[st.session_state.key]
 		st.session_state.img_url=img_urls[st.session_state.key]
 		st.session_state.value=values[st.session_state.key]
-		score = st.session_state.key
-		st.session_state.score_bar.progress(score) 
+		st.session_state.score_bar.progress(st.session_state.key*10) 
 		st.success("WELL DONE!!!")
 	else:
 		st.error("Error!!! Wrong answer!")
@@ -85,5 +84,5 @@ with st.form(key='my_form'):
 	with col7:
 		pass
 	with col4 :
-		st.form_submit_button(label='Check answer',on_click=form_callback)
+		submit_button = st.form_submit_button(label='Check answer',on_click=form_callback)
 
