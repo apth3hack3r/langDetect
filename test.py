@@ -67,7 +67,7 @@ st.markdown(r' <div style="text-align: center"> '+ st.session_state.desc + '</di
 # 	else:
 # 		st.error("Error!!! Wrong answer!")
 
-def peter_code(user_iput):
+def peter_code():
 	if(text_input.lower()==values[st.session_state.key].lower()):
 		st.session_state.key=st.session_state.key+1
 		st.session_state.desc=descs[st.session_state.key]
