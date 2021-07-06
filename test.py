@@ -3,6 +3,7 @@ import streamlit as st
 st.markdown(r'<div style="text-align: center"> <h1><ins>Quiz App</ins></h1> </div>', unsafe_allow_html=True)
 st.write("")
 
+
 descs=["Apan","Idiot!!","Pattren","Bacche","Arey main so gaya tha","Tune order kiya hai to tu hi khaega","Arey mereko batati na tera birthday hai, main cdc se cake bhijwa deta tere gharpe","Ruko pehle main tera github set karwata hu: peter hai mori maiya","Pitne ke kaam kar raha hai tu ab"]
 
 img_urls=["https://i.imgflip.com/amucx.jpg",
@@ -33,7 +34,8 @@ if 'value' not in st.session_state:
 	st.session_state.value = values[0]
 
 
-
+if 'score_bar' not in st.session_state:
+	st.session_state.score_bar = st.progress(0)
 
 
 # Aligning Image to Center (jugaadu way).
@@ -60,13 +62,11 @@ def form_callback():
 		st.session_state.desc=descs[st.session_state.key]
 		st.session_state.img_url=img_urls[st.session_state.key]
 		st.session_state.value=values[st.session_state.key]
-		st.write("WELL DONE!!!")
+		st.session_state.score_bar = st.progress(st.session_state.key) 
+		st.success("WELL DONE!!!")
 	else:
 		st.error("Error!!! Wrong answer!")
-
-
-
-
+	
 
 with st.form(key='my_form'):
 	text_input = st.text_input("")
