@@ -97,4 +97,4 @@ with st.form(key='my_form'):
 	with col7:
 		pass
 	with col4 :
-		submit_button = st.form_submit_button(label='Check',on_click=peter_code)
+		submit_button = st.form_submit_button(label='Check')
