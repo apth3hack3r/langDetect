@@ -57,7 +57,7 @@ st.markdown(r' <div style="text-align: center"> '+ st.session_state.desc + '</di
 
 
 def form_callback():
-	if(text_input.lower()==values[st.session_state.key].lower()):
+	if(text_input.lower()==values[st.session_state.key].lower() and submit_button):
 		st.session_state.key=st.session_state.key+1
 		st.session_state.desc=descs[st.session_state.key]
 		st.session_state.img_url=img_urls[st.session_state.key]
