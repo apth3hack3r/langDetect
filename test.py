@@ -61,6 +61,8 @@ def form_callback():
 		st.session_state.img_url=img_urls[st.session_state.key]
 		st.session_state.value=values[st.session_state.key]
 		st.write("WELL DONE!!!")
+	else:
+		st.write("Error!!! Wrong answer!")
 
 
 
