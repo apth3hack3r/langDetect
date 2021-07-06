@@ -6,16 +6,18 @@ st.write("")
 
 descs=["Apan","Idiot!!","Pattren","Bacche","Arey main so gaya tha","Tune order kiya hai to tu hi khaega","Arey mereko batati na tera birthday hai, main cdc se cake bhijwa deta tere gharpe","Ruko pehle main tera github set karwata hu: peter hai mori maiya","Pitne ke kaam kar raha hai tu ab"]
 
-img_urls=["https://i.imgflip.com/amucx.jpg",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.imgflip.com/amucx.jpg",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png",
-"https://i.redd.it/w3kr4m2fi3111.png"]
+img_urls=[
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+	"https://imgur.com/a/BQ2FqV5",
+]
 
 values=["Peter","Jayati","Sonia Khetrapaul","Parul Singh","Peter","Jayati","Rohit Bhaiya","Peter","Maddy","Jayati"]
 
@@ -67,8 +69,8 @@ st.markdown(r' <div style="text-align: center"> '+ st.session_state.desc + '</di
 # 	else:
 # 		st.error("Error!!! Wrong answer!")
 
-def peter_code():
-	if(text_input.lower()==values[st.session_state.key].lower()):
+def peter_code(user_input):
+	if(user_input.lower()==values[st.session_state.key].lower()):
 		st.session_state.key=st.session_state.key+1
 		st.session_state.desc=descs[st.session_state.key]
 		st.session_state.img_url=img_urls[st.session_state.key]
@@ -95,4 +97,4 @@ with st.form(key='my_form'):
 	with col7:
 		pass
 	with col4 :
-		submit_button = st.form_submit_button(label='Check',on_click=peter_code)
+		submit_button = st.form_submit_button(label='Check',on_click=peter_code(text_input))
