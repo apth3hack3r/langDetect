@@ -84,4 +84,5 @@ with st.form(key='my_form'):
 	with col7:
 		pass
 	with col4 :
-		submit_button = st.form_submit_button(label='Check',on_click=form_callback)
+		submit_button = st.form_submit_button(label='Check')
+		submit_button.on_click(form_callback)
