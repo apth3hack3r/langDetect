@@ -62,7 +62,7 @@ def form_callback():
 		st.session_state.desc=descs[st.session_state.key]
 		st.session_state.img_url=img_urls[st.session_state.key]
 		st.session_state.value=values[st.session_state.key]
-		score = st.session_state.key*5
+		score = st.session_state.key
 		st.session_state.score_bar.progress(score) 
 		st.success("WELL DONE!!!")
 	else:
