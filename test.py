@@ -3,20 +3,14 @@ import streamlit as st
 st.markdown(r'<div style="text-align: center"> <h1><ins>Quiz App</ins></h1> </div>', unsafe_allow_html=True)
 st.write("")
 
-values=["tabar1",
-"tabar2",
-"tabar3",
-"tabar4"]
+descs=["Apan","Idiot!!","Pattren","Bacche","Arey main so gaya tha","Tune order kiya hai to tu hi khaega","Arey mereko batati na tera birthday hai, main cdc se cake bhijwa deta tere gharpe","Ruko pehle main tera github set karwata hu: peter hai mori maiya","Pitne ke kaam kar raha hai tu ab"]
 
 img_urls=["https://i.imgflip.com/amucx.jpg",
 "https://i.redd.it/w3kr4m2fi3111.png",
 "https://i.imgflip.com/amucx.jpg",
 "https://i.redd.it/w3kr4m2fi3111.png"]
 
-descs=[" One of the QR code has link to meet, Find it and join the meet. We will give you the key for this level",
-"2nd Description",
-"3rd Description",
-"4th Description"]
+values=["Peter","Jayati","Sonia Khetrapaul","Parul Singh","Peter","Jayati","Rohit Bhaiya","Peter","Maddy","Jayati"]
 
 # Initializing state variables
 
@@ -26,8 +20,8 @@ if 'key' not in st.session_state:
 if 'desc' not in st.session_state:
 	st.session_state.desc = descs[0]
 
-if 'img_url' not in st.session_state:
-	st.session_state.img_url = img_urls[0]
+# if 'img_url' not in st.session_state:
+# 	st.session_state.img_url = img_urls[0]
 
 if 'value' not in st.session_state:
 	st.session_state.value = values[0]
