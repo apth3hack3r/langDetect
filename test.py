@@ -6,17 +6,19 @@ st.write("")
 
 descs=["Apan","Idiot!!","Pattren","Bacche","Arey main so gaya tha","Tune order kiya hai to tu hi khaega","Arey mereko batati na tera birthday hai, main cdc se cake bhijwa deta tere gharpe","Ruko pehle main tera github set karwata hu: peter hai mori maiya","Pitne ke kaam kar raha hai tu ab"]
 
-img_urls=["https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5",
-	"https://imgur.com/a/BQ2FqV5"
-]
+img_urls=[
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand",
+	"https://i.imgur.com/4AvboeB_d.webp?maxwidth=1520&fidelity=grand"
+	]
+
 values=["Peter","Jayati","Sonia Khetrapaul","Parul Singh","Peter","Jayati","Rohit Bhaiya","Peter","Maddy","Jayati"]
 
 # Initializing state variables
