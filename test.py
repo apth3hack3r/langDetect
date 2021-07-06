@@ -98,3 +98,5 @@ with st.form(key='my_form'):
 		pass
 	with col4 :
 		submit_button = st.form_submit_button(label='Check')
+		if(submit_button):
+			peter_code()
